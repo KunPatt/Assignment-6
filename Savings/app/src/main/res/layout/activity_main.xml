@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C988CC"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/sr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="198dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/sr"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="28dp"
+        android:text="Total"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intt" />
+
+    <TextView
+        android:id="@+id/tot2"
+        android:layout_width="208dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/tot"
+        app:layout_constraintTop_toBottomOf="@+id/intt1" />
+
+    <TextView
+        android:id="@+id/intt1"
+        android:layout_width="208dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/intt"
+        app:layout_constraintTop_toBottomOf="@+id/sr1" />
+
+    <TextView
+        android:id="@+id/sr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="198dp"
+        android:text=" Savings"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/intt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:text=" interest"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sr" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="118dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="51dp"
+        android:text="ok"
+        app:backgroundTint="#C6307D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tot" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
